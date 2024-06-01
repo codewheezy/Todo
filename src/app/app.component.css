@@ -1,0 +1,59 @@
+.bg-primary {
+    background-color: blueviolet;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.p-a-1 {
+    font-size: 25px;
+    color: #fff;
+    padding-left: 20px;
+}
+.m-t-1 {
+    margin-top: 12px;
+}
+.m-b-1 {
+    margin-bottom: 8px;
+}
+.form-control {
+    display: flex;
+    height: 35px;
+    width: 100%;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 3px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.btn {
+    height: 40px;
+    width: 70px;
+}
+.btn-primary {
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+} 
+
+th {
+    background-color: #f2f2f2; 
+    border: 1px solid #dddddd; 
+    text-align: left; 
+    padding: 13px;
+}
+td {
+    border: 1px solid #dddddd;
+}
+td {
+    padding: 13px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
