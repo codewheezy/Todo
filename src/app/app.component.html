@@ -12,10 +12,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let item of getTodoItems(); let i = index"><td>Buy Flowers</td><td>No</td></tr>
-            <tr><td>Get Shoes</td><td>No</td></tr>
-            <tr><td>Collect Tickets</td><td>Yes</td></tr>
-            <tr><td>Call Joe</td><td>No</td></tr>
+            <tr *ngFor="let item of getTodoItems(); let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ item.action }}</td>
+              <td [ngSwitch]="item.done">
+                <span *ngSwitchCase="true">Yes</span>
+                <span *ngSwitchDefault>No</span>
+            </td>
+            </tr>
         </tbody>
 </table>
 <router-outlet />
